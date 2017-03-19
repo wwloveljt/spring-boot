@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"> </meta>
+<title>Insert title here</title>
+	<!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-family: "宋体";
+	font-size: xx-large;
+}
+.STYLE3 {font-size: x-large}
+-->
+</style>
+</head>
+<body>
+	 <center>
+	
+	<table width="654" height="609" border="1">
+  <tr>
+    <td height="189" colspan="4"><p align="center" class="STYLE1">第九届“外教社杯”全国中学生英语能力大赛 </p>
+      <p align="center" class="STYLE1">山东赛区-复赛</p>
+    <p align="center" class="STYLE1">准考证</p></td>
+  </tr>
+  
+  <tr>
+    <td width="153"><div align="justify"><span class="STYLE3"> 赛区</span></div></td>
+    <td width="183"><span class="STYLE3"><p th:text="${person.city}"/></span></td>
+    <td width="103"><span class="STYLE3">考点</span></td>
+    <td width="187"><span class="STYLE3"><p th:text="${person.kd}"/></span></td>
+  </tr>
+  <tr>
+    <td height="63"><span class="STYLE3">学校</span></td>
+    <td colspan="3"><div align="center" class="STYLE3"><p th:text="${person.school}"/></div></td>
+  </tr>
+  <tr>
+    <td height="56"><span class="STYLE3">姓名</span></td>
+    <td><span class="STYLE3"><p th:text="${person.name}"/></span></td>
+    <td><span class="STYLE3">考试时间</span></td>
+    <td><span class="STYLE3"><p th:text="${person.kssj}"/></span></td>
+  </tr>
+  <tr>
+    <td height="70"><span class="STYLE3">考号</span></td>
+    <td><span class="STYLE3"><p th:text="${person.zkzh}"/></span></td>
+    <td><span class="STYLE3">考场</span></td>
+    <td><span class="STYLE3"><p th:text="${person.kc}"/></span></td>
+  </tr>
+  <tr>
+    <td height="141" colspan="4"><p class="STYLE3">考试须知：</p>
+      <p class="STYLE3"> 请考生持本人身份证或学生证，于考试时间准时入场考试，请勿携带手机、词典等物品。考试时将身份证件和准考证放在桌子边，以便监考老师查看。答题卡请用2B铅笔正确涂写，试卷类型不填，科目涂“外语”选项。</p></td>
+  </tr>
+</table>
+	 </center> 
+</body>
+</html>
